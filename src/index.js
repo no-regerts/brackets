@@ -28,7 +28,7 @@ const check = function (str, bracketsConfig) {
             else stack.push(str[i]);
         }
 
-        // Monomkorphic bracket.
+        // Monomorphic bracket.
         if (monomorphicBrackets.includes(str[i]))
             if (stack[stack.length - 1] === str[i]) stack.pop();
             else stack.push(str[i]);
